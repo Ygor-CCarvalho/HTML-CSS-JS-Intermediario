@@ -1,0 +1,114 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    min-width: 100vw;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image:url(../images/bg-repeat.jpg);
+    background-size: contain;
+}
+.informacoes{
+    color: #FFFFFF;
+    width: 300px;
+    margin-right: 60px;
+    
+}
+.informacoes p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.informacoes h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+
+/* Formulario */
+
+.formulario .form{
+    position: relative;
+    padding: 15px;
+    background-color: #FFFFFF;
+    width: 300px;
+
+}
+
+.formulario .form-control{
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.formulario .form-control input, .formulario .form-control textarea{
+    border:1px solid #000000;
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    resize:none;
+}
+
+.formulario .form-control input::placeholder, textarea::placeholder{
+    color:#A8A8A8;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.formulario .form-control small{
+    position: absolute;
+    font-size: 8px;
+    font-weight: 400;
+    bottom: -10;
+    left: 0;
+    visibility: hidden;
+}
+
+.formulario .form button{
+    background-color: #3CCC87;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    margin: 30px 0 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.formulario .form .obrigatorio{
+    position: absolute;
+    left: 12px;
+    bottom: 77px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+/* CAMPO OBRIGATÓRIO */
+
+.form-control.erro input, .form-control.erro textarea{
+    border-color: #e74e3c;
+}
+
+.form-control.erro small{
+    visibility: visible;
+    color: #e74e3c;
+
+}
+
+.form-control.sucesso input, .form-control.sucesso textarea{
+    border-color: #2ecc71;
+}
